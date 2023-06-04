@@ -27,3 +27,18 @@ body {
     text-align: center;
   }
   
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 22px;
+    }
+  
+    main {
+      padding: 10px;
+    }
+  }
+  
