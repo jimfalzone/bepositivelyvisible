@@ -3,18 +3,21 @@
 
 <head>
     <title>My Website Development Skills</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
 </head>
 
 <body>
     <header>
+
+        <!-- Navbar Section -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
-            <div class="container">
-                <img loading="lazy" src="images/cocoon.png" class="small-image" alt="">
-                <!-- <a class="navbar-brand" href="">Your Logo</a> -->
+            <div class="container-fluid">
+                <img loading="lazy" src="images/cocoon.png" class="small-image ms-5" alt="" />
+                <a class="navbar-brand p-3" href="./images/cocoon.png">Be Postively Visible</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -36,8 +39,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Testimonials</a>
                         </li>
-
-
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
@@ -47,34 +48,184 @@
         </nav>
     </header>
 
-
-
     <!-- Hero Section -->
-    <div class="container col-xxl-8 px-4 py-5">
+    <div class="container col-xxl-8 py-3">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5 mt-3">
             <div class="col-10 col-sm-8 col-lg-6">
-                <img src="images/cocoonphoto.png" class="d-block mx-lg-auto img-fluid" alt="" loading="lazy">
+                <img src="images/cocoonphoto.png" class="d-block mx-lg-auto img-fluid rounded-5" alt=""
+                    loading="lazy" />
             </div>
             <div class="col-lg-6">
                 <div class="lc-block mb-3">
                     <div editable="rich">
-                        <h2 class="fw-bold display-5">Be Positively Visible</h2>
+                        <h2 class="fw-bold display-5">
+                            We Help Startups Be Positively Visible
+                        </h2>
                     </div>
                 </div>
-
                 <div class="lc-block mb-3">
                     <div editable="rich">
-                        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-                            world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
-                            responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+                        <p class="lead">
+                            Empowering startups with a positive online presence. We are a web design company
+                            dedicated
+                            to crafting visually stunning and user-friendly websites that help startup companies
+                            shine
+                            in the digital world. Our expertise ensures that your brand is positively visible,
+                            engaging
+                            visitors and driving growth. Together, let's make your startup's online presence take
+                            flight.
                         </p>
                     </div>
                 </div>
-
-                <div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start"><a
-                        class="btn btn-primary px-4 me-md-2" href="portfolio.html" role="button">Portfolio</a>
-                    <a class="btn btn-outline-secondary px-4" href="services.html" role="button">Services</a>
+                <div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a class="btn btn-primary px-4 me-md-2" href="portfolio.html" role="button">Let's work
+                        together</a>
                 </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Services Section -->
+    <div class="container-fluid">
+
+        <section class="py-0 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light mb-4">Our Services</h1>
+                    <p class="lead text-body-secondary">
+                        From Chrysalis to Brilliance: LIke a butterfy emerging from its cocoon, our portfolio is a
+                        vibrant garden of web designs that are playful and innovative. Join us as as we spread our
+                        wings.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="pb-5" style="max-width: 1200px; min-width: 300px; margin: 0 auto">
+            <div class="row">
+
+
+
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="margin: 0 auto">
+    <section id="tab-menu" style="margin-top: 30px">
+        <div class="tab-menu active" id="point1">
+            <img src="./images/customdesign.png" width="70">
+            <h4 class="fw-light mb-4">Custom Website Development</h4>
+        </div>
+        <div class="tab-menu" id="point2">
+            <img src="./images/uxdesign.png" width="70">
+            <h4 class="fw-light mb-4">User Experience (UX) Design</h4>
+        </div>
+        <div class="tab-menu" id="point3">
+            <img src="./images/responsivedesign.png" width="70">
+            <h4 class="fw-light mb-4">Responsive Design for Smaller Devices</h4>
+        </div>
+        <div class="tab-menu" id="point4">
+            <img src="./images/support.png" width="70">
+            <h4 class="fw-light mb-4">Website Maintenance and Support</h4>
+        </div>
+    </section>
+</div>
+
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="content">
+    <!-- Content for point1 -->
+    <div class="tab-content" id="content-point1">
+        <p>This is the content for Custom Website Development.</p>
+    </div>
+
+    <!-- Content for point2 -->
+    <div class="tab-content" id="content-point2">
+        <p>This is the content for User Experience (UX) Design.</p>
+    </div>
+
+    <!-- Content for point3 -->
+    <div class="tab-content" id="content-point3">
+        <p>This is the content for Responsive Design for Smaller Devices.</p>
+    </div>
+
+    <!-- Content for point4 -->
+    <div class="tab-content" id="content-point4">
+        <p>This is the content for Website Maintenance and Support.</p>
+    </div>
+</div>
+
+
+
+
+
+
+                <!-- <div class="col-lg-8 col-md-4 col-sm-4 col-xs-12 h3-newline" style="margin: 0 auto">
+
+
+                    <section class="flex-container description-col point-box1" style="margin-top: 30px; display: none;">
+                        <p style="font-weight: bold">Recognize<sup>TM</sup></p>
+                        <h3 style="color: #FFA944">EMPLOYEE RECOGNITION</h3>
+                        <p style="padding-top: 10px">
+                            Create a global employee experience with employee recognition programs
+                            both customized to your brand and localized for each region.
+                        </p>
+                        <div class="btn-wrap btn-align-left">
+                            <a href="https://www.achievers.com/platform/recognize/" target="" class="btn btn--secondary"
+                                rel="noopener">Discover Recognize</a>
+                        </div>
+                    </section>
+
+
+                    <section class="flex-container description-col point-box2" style="margin-top: 30px; display: none;">
+                        <p style="font-weight: bold">Reward<sup>TM</sup></p>
+                        <h3 style="color: #FFA944">EMPLOYEE REWARDS</h3>
+                        <p style="padding-top: 10px">
+                            Build a recognition program that offers an always expanding global
+                            rewards catalog ranging across price points and categories, in country
+                            fulfillment, and award winning customer service.
+                        </p>
+                        <div class="btn-wrap btn-align-left">
+                            <a href="https://www.achievers.com/demo/" target="" class="btn btn--secondary"
+                                rel="noopener">See it
+                                in action</a>
+                        </div>
+                    </section>
+
+
+                    <section class="flex-container description-col point-box3" style="margin-top: 30px; display: none;">
+                        <p style="font-weight: bold">Celebrate<sup>TM</sup></p>
+                        <h3 style="color: #FFA944">ANNIVERSARY AND EVENT CELEBRATION</h3>
+                        <p style="padding-top: 10px">
+                            Ensure unique contributions and career milestones get the special
+                            recognition they deserve without administrative time and effort.
+                        </p>
+                        <div class="btn-wrap btn-align-left">
+                            <a href="https://www.achievers.com/demo/" target="" class="btn btn--secondary"
+                                rel="noopener">See it
+                                in action</a>
+                        </div>
+                    </section>
+
+                    <section class="flex-container description-col point-box5"
+                        style="margin-top: 30px; display: block;">
+                        <p style="font-weight: bold">Connect<sup>TM</sup></p>
+                        <h3 style="color: #FFA944">EMPLOYEE CONNECTIONS</h3>
+                        <p style="padding-top: 10px">
+                            Encourage collaboration and create an environment where people can do
+                            their best work through an employee pairing and networking solution
+                            that you can configure to meet your needs.
+                        </p>
+                        <div class="btn-wrap btn-align-left">
+                            <a href="https://www.achievers.com/demo/" target="" class="btn btn--secondary"
+                                rel="noopener">See it
+                                in action</a>
+                        </div>
+
+                    </section>
+                </div> -->
+
+
+
+
+
 
             </div>
         </div>
@@ -85,68 +236,149 @@
 
 
 
-    <!--
-Start About Section
-==================================== -->
-    <section class="about-2 section" id="about">
-        <div class="container">
-            <div class="row justify-content-center">
-                <!-- section title -->
-                <div class="col-lg-12">
-                    <div class="title text-center mt-5">
-                        <!-- <h2>What I do and why I do it</h2>
-					<p>I didn't even know I was living in a coccoon until I began to escape from. Quibusdam reprehenderit accusamus labore iusto,
-						aut, eum itaqu tellus integer. Mattis pellentesque id nibh tortor id aliquet. Adipiscing at in tellus integer feugiat. Egestas sed tempus urna et pharetra pharetra massa. Mi quis hendrerit dolor magna eget. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Sagittis eu volutpat odio facilisis mauris sit. Blandit massa enim nec dui nunc. Molestie at elementum eu facilisis sed odio morbi quis. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Porta non pulvinar neque laoreet suspendisse interdum consectetur libero id. Justo donec enim diam vulputate ut pharetra sit amet.
-            I strive to create user-friendly and engaging web experiences.
 
-           r commodo ullamcorper a lacus vestibulum. Scelerisque in dictum non consectetur. Aliquam sem et tortor consequat id. Proin sagittis nisl rhoncus mattis rhoncus urna neque. Aliquam ut porttitor leo a diam sollicitudin tempor. Integer vitae justo eget magna. Lorem sed risus ultricies tristique nulla aliquet enim. Vitae justo eget magna fermentum iaculis eu. Ac tortor dignissim convallis aenean et tortor at risus. Lectus magna fringilla urna porttitor rhoncus dolor purus non.
-
-      Risus viverra adip</p> -->
-                        <!-- <div class="border"></div> -->
-                    </div>
+    <!-- Portfolio Section -->
+    <div class="container">
+        <section class="py-0 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light mb-4">Our Work</h1>
+                    <p class="lead text-body-secondary">
+                        From Chrysalis to Brilliance: LIke a butterfy emerging from its cocoon, our portfolio is a
+                        vibrant garden of web designs that are playful and innovative. Join us as as we spread our
+                        wings.
+                    </p>
+                    <!-- <p>
+                            <a href="#" class="btn btn-primary my-2">The main call to action</a>
+                            <a href="#" class="btn btn-secondary my-2">Secondary work</a>
+                        </p> -->
                 </div>
-                <!-- /section title -->
             </div>
+        </section>
 
-            <div class="row mt-4 mb-5">
 
-                <div class="col-md-6">
-                    <img loading="lazy" src="images/butterfly-cocoons.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-md-6 mt-3">
-                    <h2>Our services include:</h2>
-                    <ul class="no-bullet">
-                        <li><img src="images/checkmark.png" alt="Image 1" class="small-image"> HTML 5</li>
-                        <li><img src="images/checkmark.png" alt="Image 5" class="small-image"> React.js / Next.js</li>
-                        <li><img src="images/checkmark.png" alt="Image 2" class="small-image"> CSS 3</li>
-                        <li><img src="images/checkmark.png" alt="Image 3" class="small-image"> JavaScript</li>
-                        <li><img src="images/checkmark.png" alt="Image 4" class="small-image"> UI/UX Design</li>
-                        <li><img src="images/checkmark.png" alt="Image 5" class="small-image"> Bootstrap 5</li>
-                    </ul>
-                    <div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start mb-5"><a
-                            class="btn btn-primary px-4 me-md-2" href="portfolio.html" role="button">Learn More</a>
-                        <!-- <a class="btn btn-outline-secondary px-4" href="services.html" role="button">Services</a> -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="./images/dulcestropicalscreenshot.png" class="card-img-top card-image" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">
+                            This is a broader card with supporting text below as a natural introduction to
+                            additional content. This content is a bit longer.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="https://www.dulcestropical.com" target="_blank">
+                                    <button type="button" class="btn btn-primary my-2">
+                                        Visit Website
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div> <!-- End row -->
-        </div> <!-- End container -->
-    </section> <!-- End section -->
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="./images/tindog.png" class="card-img-top card-image" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">
+                            This is a broader card with supporting text below as a natural introduction to
+                            additional content. This content is a bit longer.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="https://jimfalzone.github.io/tindog/" target="_blank">
+                                    <button type="button" class="btn btn-primary my-2">
+                                        Visit Website
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="./images/paigetaylor.png" class="card-image card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">
+                            This is a broader card with supporting text below as a natural introduction to
+                            additional content. This content is a bit longer.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="https://www.canva.com/design/DAFoeBKylq4/4QVUAu6q9kVDgGjyfJvJOQ/view?website#4:home"
+                                    target="_blank">
+                                    <button type="button" class="btn btn-primary my-2">
+                                        Visit Website
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+    <!-- Services Section -->
+    <div class="container mt-5">
+        <div class="row mt-5 mb-5">
+            <div class="col-md-6">
+                <img loading="lazy" src="images/butterfly-cocoons.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="col-md-6 mt-3">
+                <h2>Our services include:</h2>
+                <ul class="no-bullet">
+                    <li>
+                        <img src="images/checkmark.png" alt="Image 1" class="small-image" />
+                        HTML 5
+                    </li>
+                    <li>
+                        <img src="images/checkmark.png" alt="Image 5" class="small-image" />
+                        React.js / Next.js
+                    </li>
+                    <li>
+                        <img src="images/checkmark.png" alt="Image 2" class="small-image" />
+                        CSS 3
+                    </li>
+                    <li>
+                        <img src="images/checkmark.png" alt="Image 3" class="small-image" />
+                        JavaScript
+                    </li>
+                    <li>
+                        <img src="images/checkmark.png" alt="Image 4" class="small-image" />
+                        UI/UX Design
+                    </li>
+                    <li>
+                        <img src="images/checkmark.png" alt="Image 5" class="small-image" />
+                        Bootstrap 5
+                    </li>
+                </ul>
+                <div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start mb-5">
+                    <a class="btn btn-primary px-4 me-md-2" href="portfolio.html" role="button">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-
-
-
+    <!-- Footer Section -->
     <footer>
         <p id="copyright">
-            &copy; <span id="year"></span> Be Positively Visible. All rights reserved.
+            &copy; <span id="year"></span> Be Positively Visible. All rights
+            reserved.
         </p>
     </footer>
+
+    <!-- Javascript Section -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
+
 
 </html>
