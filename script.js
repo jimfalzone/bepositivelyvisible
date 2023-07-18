@@ -21,12 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
-
-
-
-
-
 // Services Menu
 document.addEventListener('DOMContentLoaded', function () {
   var tabMenus = document.querySelectorAll('.tab-menu');
@@ -71,3 +65,25 @@ document.addEventListener('DOMContentLoaded', function () {
   showTabContent(firstContentId);
 });
 
+
+
+// Custom Scrollspy with Horizontal Offset
+document.addEventListener('DOMContentLoaded', function () {
+  const offset = 50; // Set the horizontal offset here (adjust as needed)
+
+  const spyLinks = document.querySelectorAll('a.nav-link[href^="#services-section"]');
+
+  function scrollToSection(event) {
+    event.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    const topPosition = target.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({
+      top: topPosition,
+      behavior: 'smooth',
+    });
+  }
+
+  spyLinks.forEach(function (link) {
+    link.addEventListener('click', scrollToSection);
+  });
+});

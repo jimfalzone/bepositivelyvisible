@@ -12,12 +12,13 @@
 
 <body>
     <header>
-
         <!-- Navbar Section -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
             <div class="container-fluid">
-                <img loading="lazy" src="images/cocoon.png" class="small-image ms-5" alt="" />
-                <a class="navbar-brand p-3" href="./images/cocoon.png">Be Postively Visible</a>
+                <a href="#hero-section">
+                    <img loading="lazy" src="images/cocoon.png" class="small-image ms-5" alt="" />
+                </a>
+                <a class="navbar-brand p-3" href="#hero-section">Be Positively Visible</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,13 +26,14 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="#hero-section">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="#services-section" data-offset="500">Services</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            <a class="nav-link" href="#portfolio-section">Portfolio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
@@ -49,7 +51,7 @@
     </header>
 
     <!-- Hero Section -->
-    <div class="container col-xxl-8 py-3">
+    <div class="container col-xxl-8 py-3" id="hero-section">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5 mt-3">
             <div class="col-10 col-sm-8 col-lg-6">
                 <img src="images/cocoonphoto.png" class="d-block mx-lg-auto img-fluid rounded-5" alt=""
@@ -86,147 +88,112 @@
     </div>
 
 
+
+
+
+
     <!-- Services Section -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="services-section">
 
         <section class="py-0 text-center container">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
                     <h1 class="fw-light mb-4">Our Services</h1>
                     <p class="lead text-body-secondary">
-                        From Chrysalis to Brilliance: LIke a butterfy emerging from its cocoon, our portfolio is a
-                        vibrant garden of web designs that are playful and innovative. Join us as as we spread our
-                        wings.
+                        From Chrysalis to Brilliance: Like a butterfly emerging from its cocoon, our portfolio is a
+                        vibrant
+                        garden of web designs that are playful and innovative. Join us as we spread our wings.
                     </p>
                 </div>
             </div>
         </section>
 
-
         <div class="pb-5" style="max-width: 1200px; min-width: 300px; margin: 0 auto">
             <div class="row">
-
-
-
-
-<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="margin: 0 auto">
-    <section id="tab-menu" style="margin-top: 30px">
-        <div class="tab-menu active" id="point1">
-            <img src="./images/customdesign.png" width="70">
-            <h4 class="fw-light mb-4">Custom Website Development</h4>
-        </div>
-        <div class="tab-menu" id="point2">
-            <img src="./images/uxdesign.png" width="70">
-            <h4 class="fw-light mb-4">User Experience (UX) Design</h4>
-        </div>
-        <div class="tab-menu" id="point3">
-            <img src="./images/responsivedesign.png" width="70">
-            <h4 class="fw-light mb-4">Responsive Design for Smaller Devices</h4>
-        </div>
-        <div class="tab-menu" id="point4">
-            <img src="./images/support.png" width="70">
-            <h4 class="fw-light mb-4">Website Maintenance and Support</h4>
-        </div>
-    </section>
-</div>
-
-<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="content">
-    <!-- Content for point1 -->
-    <div class="tab-content" id="content-point1">
-        <p>This is the content for Custom Website Development.</p>
-    </div>
-
-    <!-- Content for point2 -->
-    <div class="tab-content" id="content-point2">
-        <p>This is the content for User Experience (UX) Design.</p>
-    </div>
-
-    <!-- Content for point3 -->
-    <div class="tab-content" id="content-point3">
-        <p>This is the content for Responsive Design for Smaller Devices.</p>
-    </div>
-
-    <!-- Content for point4 -->
-    <div class="tab-content" id="content-point4">
-        <p>This is the content for Website Maintenance and Support.</p>
-    </div>
-</div>
-
-
-
-
-
-
-                <!-- <div class="col-lg-8 col-md-4 col-sm-4 col-xs-12 h3-newline" style="margin: 0 auto">
-
-
-                    <section class="flex-container description-col point-box1" style="margin-top: 30px; display: none;">
-                        <p style="font-weight: bold">Recognize<sup>TM</sup></p>
-                        <h3 style="color: #FFA944">EMPLOYEE RECOGNITION</h3>
-                        <p style="padding-top: 10px">
-                            Create a global employee experience with employee recognition programs
-                            both customized to your brand and localized for each region.
-                        </p>
-                        <div class="btn-wrap btn-align-left">
-                            <a href="https://www.achievers.com/platform/recognize/" target="" class="btn btn--secondary"
-                                rel="noopener">Discover Recognize</a>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="margin: 0 auto">
+                    <section id="tab-menu" style="margin-top: 30px">
+                        <div class="tab-menu active" id="point1">
+                            <img src="./images/customdesign.png" width="70">
+                            <h4 class="fw-light mb-4">Custom Website Development</h4>
+                        </div>
+                        <div class="tab-menu" id="point2">
+                            <img src="./images/uxdesign.png" width="70">
+                            <h4 class="fw-light mb-4">User Experience (UX) Design</h4>
+                        </div>
+                        <div class="tab-menu" id="point3">
+                            <img src="./images/responsivedesign.png" width="70">
+                            <h4 class="fw-light mb-4">Responsive Design</h4>
+                        </div>
+                        <div class="tab-menu" id="point4">
+                            <img src="./images/support.png" width="70">
+                            <h4 class="fw-light mb-4">Website Maintenance and Support</h4>
                         </div>
                     </section>
+                </div>
 
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="content">
+                    <!-- Content for point1 -->
+                    <div class="tab-content" id="content-point1">
+                        <p>We provide website solutions that align perfectly with your business objectives and provide a
+                            superior user experience for your audience. It's an investment in the future success and
+                            growth
+                            of your online presence and offers several benefits, including:</p>
+                        <ul>
+                            <li>Tailored Design: With custom website development, your design is not limited by
+                                templates.
+                                You can have a unique layout, color scheme, and typography that reflects your brand's
+                                personality and message.</li>
+                            <li>Performance Optimization: Custom websites are optimized for speed and performance,
+                                ensuring
+                                fast loading times and smooth user interactions. This contributes to better user
+                                engagement
+                                and conversion rates.</li>
+                            <li>Targeted Audience: A custom website allows you to target specific demographics and
+                                tailor
+                                the user experience to meet their needs. This can lead to higher customer satisfaction
+                                and
+                                increased brand loyalty.</li>
+                            <li>Integration of Advanced Features: Custom development enables the integration of advanced
+                                features and functionalities specific to your industry and business goals. Examples
+                                include
+                                custom calculators, interactive maps, and personalized user accounts.</li>
+                            <li>Future-Proofing: A custom website is designed with future growth and scalability in
+                                mind.
+                                You can easily add new features and update content as your business expands, without the
+                                limitations of pre-designed templates.</li>
+                            <li>SEO-Centric: A custom website can be built with SEO in mind from the ground up. This
+                                includes clean code, optimized URLs, and keyword-rich content, enhancing your website's
+                                visibility on search engines.</li>
+                            <li>Data Security: Custom websites provide better data security as the codebase is not
+                                publicly
+                                available like in template-based solutions. This reduces the risk of cyberattacks and
+                                data
+                                breaches.</li>
+                            <li>Analytics and Tracking: You can integrate custom analytics and tracking tools to monitor
+                                user behavior, track conversions, and make data-driven decisions to improve your
+                                website's
+                                performance.</li>
+                            <li>Brand Consistency: A custom website allows you to maintain consistent branding across
+                                all
+                                web pages. This fosters brand recognition and trust among your audience.</li>
+                        </ul>
+                    </div>
 
-                    <section class="flex-container description-col point-box2" style="margin-top: 30px; display: none;">
-                        <p style="font-weight: bold">Reward<sup>TM</sup></p>
-                        <h3 style="color: #FFA944">EMPLOYEE REWARDS</h3>
-                        <p style="padding-top: 10px">
-                            Build a recognition program that offers an always expanding global
-                            rewards catalog ranging across price points and categories, in country
-                            fulfillment, and award winning customer service.
-                        </p>
-                        <div class="btn-wrap btn-align-left">
-                            <a href="https://www.achievers.com/demo/" target="" class="btn btn--secondary"
-                                rel="noopener">See it
-                                in action</a>
-                        </div>
-                    </section>
+                    <!-- Content for point2 -->
+                    <div class="tab-content" id="content-point2">
+                        <p>This is the content for User Experience (UX) Design.</p>
+                    </div>
 
+                    <!-- Content for point3 -->
+                    <div class="tab-content" id="content-point3">
+                        <p>This is the content for Responsive Design for Smaller Devices.</p>
+                    </div>
 
-                    <section class="flex-container description-col point-box3" style="margin-top: 30px; display: none;">
-                        <p style="font-weight: bold">Celebrate<sup>TM</sup></p>
-                        <h3 style="color: #FFA944">ANNIVERSARY AND EVENT CELEBRATION</h3>
-                        <p style="padding-top: 10px">
-                            Ensure unique contributions and career milestones get the special
-                            recognition they deserve without administrative time and effort.
-                        </p>
-                        <div class="btn-wrap btn-align-left">
-                            <a href="https://www.achievers.com/demo/" target="" class="btn btn--secondary"
-                                rel="noopener">See it
-                                in action</a>
-                        </div>
-                    </section>
-
-                    <section class="flex-container description-col point-box5"
-                        style="margin-top: 30px; display: block;">
-                        <p style="font-weight: bold">Connect<sup>TM</sup></p>
-                        <h3 style="color: #FFA944">EMPLOYEE CONNECTIONS</h3>
-                        <p style="padding-top: 10px">
-                            Encourage collaboration and create an environment where people can do
-                            their best work through an employee pairing and networking solution
-                            that you can configure to meet your needs.
-                        </p>
-                        <div class="btn-wrap btn-align-left">
-                            <a href="https://www.achievers.com/demo/" target="" class="btn btn--secondary"
-                                rel="noopener">See it
-                                in action</a>
-                        </div>
-
-                    </section>
-                </div> -->
-
-
-
-
-
-
+                    <!-- Content for point4 -->
+                    <div class="tab-content" id="content-point4">
+                        <p>This is the content for Website Maintenance and Support.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -238,7 +205,7 @@
 
 
     <!-- Portfolio Section -->
-    <div class="container">
+    <div class="container" id="portfolio-section">
         <section class="py-0 text-center container">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
@@ -323,50 +290,8 @@
     </div>
 
 
-    <!-- Services Section -->
-    <div class="container mt-5">
-        <div class="row mt-5 mb-5">
-            <div class="col-md-6">
-                <img loading="lazy" src="images/butterfly-cocoons.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="col-md-6 mt-3">
-                <h2>Our services include:</h2>
-                <ul class="no-bullet">
-                    <li>
-                        <img src="images/checkmark.png" alt="Image 1" class="small-image" />
-                        HTML 5
-                    </li>
-                    <li>
-                        <img src="images/checkmark.png" alt="Image 5" class="small-image" />
-                        React.js / Next.js
-                    </li>
-                    <li>
-                        <img src="images/checkmark.png" alt="Image 2" class="small-image" />
-                        CSS 3
-                    </li>
-                    <li>
-                        <img src="images/checkmark.png" alt="Image 3" class="small-image" />
-                        JavaScript
-                    </li>
-                    <li>
-                        <img src="images/checkmark.png" alt="Image 4" class="small-image" />
-                        UI/UX Design
-                    </li>
-                    <li>
-                        <img src="images/checkmark.png" alt="Image 5" class="small-image" />
-                        Bootstrap 5
-                    </li>
-                </ul>
-                <div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start mb-5">
-                    <a class="btn btn-primary px-4 me-md-2" href="portfolio.html" role="button">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
     <!-- Footer Section -->
-    <footer>
+    <footer class="mt-5">
         <p id="copyright">
             &copy; <span id="year"></span> Be Positively Visible. All rights
             reserved.
@@ -374,9 +299,9 @@
     </footer>
 
     <!-- Javascript Section -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
 

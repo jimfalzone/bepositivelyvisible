@@ -142,29 +142,31 @@ footer {
   cursor: pointer;
 }
 
-
-
-
-
-
 /* Apply the underline for the active .tab-menu div */
-.tab-menu {
+.tab-menu.active {
   position: relative;
   /* Add position relative to the .tab-menu to position the underline */
 }
 
 /* Create the underline using ::after pseudo-element */
-.tab-menu::after {
+.tab-menu.active::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0;
   height: 5px;
-  background-color: #afc083;
+  background-color: #AFC083;
   /* Change the color as per your preference */
   transition: width 0.5s ease-in-out;
   /* Add the transition property for smooth animation */
+}
+
+/* Apply the animation to the .tab-menu with the 'active' class */
+.tab-menu.active.animate-underline::after {
+  width: 100%;
+  /* Use the defined keyframes for the animation */
+  animation: underline-appear 0.5s forwards ease-in-out;
 }
 
 /* Add the keyframes for the animation */
@@ -178,14 +180,85 @@ footer {
   }
 }
 
-/* Apply the animation to the .tab-menu with the 'active' class */
-.tab-menu.active::after {
-  animation: underline-appear 0.5s forwards ease-in-out;
-  /* Use the defined keyframes for the animation */
+/* Hide all content sections by default */
+.tab-content {
+  display: none;
 }
+
+/* Show content for the first menu item */
+#content-point1 {
+  display: block;
+}
+
+/* Apply flexbox to the .tab-menu container */
+.tab-menu {
+  display: flex;
+  align-items: center;
+  height: 5em;
+  margin-bottom: 3em;
+}
+
+/* Add some margin between the image and the h4 element */
+.tab-menu img {
+  margin-right: 10px;
+  margin-top: -25px;
+}
+
+/* Apply a bottom border to each .tab-menu div */
+.tab-menu {
+  border-bottom: 5px solid transparent;
+  padding-bottom: -20px;
 }
 
 
+
+/* Apply pointer cursor on hover for .tab-menu elements */
+.tab-menu:hover {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* CSS for smaller devices */
+@media (max-width: 908px) {
+  .tab-menu {
+    display: flex;
+    align-items: center;
+    height: 3.5em;
+    /* Adjust the height as needed */
+    margin-bottom: 1em;
+    /* Adjust the spacing between menu items */
+  }
+
+  .tab-menu img {
+    width: 40px;
+    /* Reduce the size of the icons */
+    margin-right: 5px;
+    /* Adjust the spacing between the icon and the text */
+    margin-top: -10px;
+    /* Adjust the vertical alignment of the icons */
+  }
+
+  .tab-menu h4 {
+    font-size: 14px;
+    /* Reduce the font size for h4 elements */
+  }
+
+  .tab-content {
+    padding: 0 15px;
+    /* Add horizontal padding to the content sections */
+  }
+
+  .tab-content ul {
+    padding-left: 20px;
+    /* Add left padding for the bullet points in the list */
+  }
+}
 
 
 
