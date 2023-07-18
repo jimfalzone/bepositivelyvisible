@@ -123,34 +123,11 @@ footer {
   Services section
 ==================================================================*/
 
-/* Apply flexbox to the .tab-menu container */
-.tab-menu {
-  display: flex;
-  align-items: center;
-  height: 5em;
-  margin-bottom: 3em;
-  /* Vertically align items in the center */
-}
-
 /* Add some margin between the image and the h4 element */
 .tab-menu img {
   margin-right: 10px;
   margin-top: -25px;
   /* Adjust the margin as per your preference */
-}
-
-/* Apply a bottom border to each .tab-menu div */
-.tab-menu {
-  border-bottom: 5px solid transparent;
-  /* Use a transparent color for initial state */
-  /* Change the color or style as per your preference */
-  padding-bottom: -20px;
-  /* Add some spacing between each element */
-}
-
-/* Apply pointer cursor on hover for .tab-menu elements */
-.tab-menu:hover {
-  cursor: pointer;
 }
 
 /* Apply the underline for the active .tab-menu div */
@@ -226,6 +203,7 @@ footer {
 /* Apply pointer cursor on hover for .tab-menu elements */
 .tab-menu:hover {
   cursor: pointer;
+  opacity: .5;
 }
 
 #services-heading {
