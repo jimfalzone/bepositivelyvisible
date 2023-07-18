@@ -87,3 +87,14 @@ document.addEventListener('DOMContentLoaded', function () {
     link.addEventListener('click', scrollToSection);
   });
 });
+
+
+
+// Footer
+
+// Get the current year
+const currentYear = new Date().getFullYear();
+
+// Update the year in the HTML
+const yearElement = document.getElementById('year');
+yearElement.textContent = currentYear;

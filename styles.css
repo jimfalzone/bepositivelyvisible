@@ -23,6 +23,8 @@ footer {
   color: #fff;
   padding: 10px;
   text-align: center;
+  margin-top: 5em;
+  padding-top: 30px;
 }
 
 /* Responsive Styles */
@@ -38,6 +40,12 @@ footer {
   main {
     padding: 10px;
   }
+}
+
+/* Styles for the logo image on hover */
+.logo-image:hover {
+  opacity: 0.5;
+  /* Set the opacity to 50% on hover */
 }
 
 .navbar {
@@ -107,6 +115,9 @@ footer {
   background-color: #ff6347;
   border-color: #ff6347;
 }
+
+
+
 
 /*=================================================================
   Services section
@@ -194,15 +205,17 @@ footer {
 .tab-menu {
   display: flex;
   align-items: center;
-  height: 5em;
-  margin-bottom: 3em;
+  min-height: 7em;
+  /* Use min-height instead of fixed height */
+  margin-bottom: 1em;
+  /* Add button-like styles */
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
 }
 
-/* Add some margin between the image and the h4 element */
-.tab-menu img {
-  margin-right: 10px;
-  margin-top: -25px;
-}
 
 /* Apply a bottom border to each .tab-menu div */
 .tab-menu {
@@ -210,22 +223,22 @@ footer {
   padding-bottom: -20px;
 }
 
-
-
 /* Apply pointer cursor on hover for .tab-menu elements */
 .tab-menu:hover {
   cursor: pointer;
 }
 
+#services-heading {
+  margin-left: 11em;
+}
 
-
-
-
-
+#services-section {
+  background-color: #FFA94409;
+}
 
 
 /* CSS for smaller devices */
-@media (max-width: 908px) {
+@media (max-width: 1350px) {
   .tab-menu {
     display: flex;
     align-items: center;
@@ -233,6 +246,7 @@ footer {
     /* Adjust the height as needed */
     margin-bottom: 1em;
     /* Adjust the spacing between menu items */
+    min-height: 8em;
   }
 
   .tab-menu img {
@@ -245,7 +259,7 @@ footer {
   }
 
   .tab-menu h4 {
-    font-size: 14px;
+    font-size: 18px;
     /* Reduce the font size for h4 elements */
   }
 
@@ -305,20 +319,6 @@ footer {
   height: auto;
 }
 
-/* Footer ====================================*/
-
-.footer {
-  background-color: #333;
-  margin-top: 3rem;
-  padding: 1rem 0;
-  width: 100%;
-}
-
-.footer-text {
-  color: #fff;
-  font-size: 1.2rem;
-  text-align: center;
-}
 
 .card-image {
   height: 220px;
