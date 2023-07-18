@@ -257,6 +257,22 @@ footer {
   }
 }
 
+.maintenance {
+  display: block;
+  overflow: hidden;
+}
+
+.maint-img {
+  float: right;
+  width: 25em;
+  /* Add some margin to create space between the image and the list */
+  margin-left: 30px;
+  /* Adjust this value to your liking */
+}
+
+
+
+
 
 
 
