@@ -21,19 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// Continue with the existing code
-document.addEventListener('DOMContentLoaded', function () {
-  const hamburger = document.querySelector('.hamburger');
-  const menu = document.querySelector('.menu');
-
-  hamburger.addEventListener('click', function (event) {
-    // Prevent the click event from propagating to the window
-    event.stopPropagation();
-    menu.classList.toggle('active');
-  });
-});
-
-
 // Services Menu
 document.addEventListener('DOMContentLoaded', function () {
   var tabMenus = document.querySelectorAll('.tab-menu');
@@ -82,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Custom Scrollspy with Horizontal Offset
 document.addEventListener('DOMContentLoaded', function () {
-  const offset = 60; // Set the horizontal offset here (adjust as needed)
+  const offset = 50; // Set the horizontal offset here (adjust as needed)
 
   const spyLinks = document.querySelectorAll('a.nav-link[href^="#services-section"]');
 
