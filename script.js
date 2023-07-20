@@ -21,6 +21,19 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// Continue with the existing code
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburger = document.querySelector('.hamburger');
+  const menu = document.querySelector('.menu');
+
+  hamburger.addEventListener('click', function (event) {
+    // Prevent the click event from propagating to the window
+    event.stopPropagation();
+    menu.classList.toggle('active');
+  });
+});
+
+
 // Services Menu
 document.addEventListener('DOMContentLoaded', function () {
   var tabMenus = document.querySelectorAll('.tab-menu');
@@ -69,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Custom Scrollspy with Horizontal Offset
 document.addEventListener('DOMContentLoaded', function () {
-  const offset = 50; // Set the horizontal offset here (adjust as needed)
+  const offset = 60; // Set the horizontal offset here (adjust as needed)
 
   const spyLinks = document.querySelectorAll('a.nav-link[href^="#services-section"]');
 
@@ -87,6 +100,63 @@ document.addEventListener('DOMContentLoaded', function () {
     link.addEventListener('click', scrollToSection);
   });
 });
+
+
+
+
+
+// Contact Section
+
+// Define variables to store the name, email, subject, and message
+let fullName = "";
+let emailAddress = "";
+let emailSubject = "";
+let emailMessage = "";
+
+// Add an event listener to the button element
+document.getElementById('submitBtn').addEventListener('click', function () {
+  // Trigger the console log
+  console.log('Button pressed');
+
+  // Get the value from the name input field and save it to the variable
+  fullName = document.getElementById('name').value;
+  console.log('Name:', fullName);
+
+  // Get the value from the email input field and save it to the variable
+  emailAddress = document.getElementById('email').value;
+  console.log('Email:', emailAddress);
+
+  // Get the value from the subject input field and save it to the variable
+  emailSubject = document.getElementById('subject').value;
+  console.log('Subject:', emailSubject);
+
+  // Get the value from the message textarea and save it to the variable
+  emailMessage = document.getElementById('message').value;
+  console.log('Message:', emailMessage);
+
+  // Show the success message
+  document.getElementById('form-message-success').style.display = 'block';
+
+  // Clear the input fields after submitting
+  document.getElementById('name').value = "";
+  document.getElementById('email').value = "";
+  document.getElementById('subject').value = "";
+  document.getElementById('message').value = "";
+
+  // Hide the success message after 5 seconds (5000 milliseconds)
+  setTimeout(function () {
+    document.getElementById('form-message-success').style.display = 'none';
+  }, 5000);
+});
+
+window.onbeforeunload = () => {
+  for (const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
+
+
+
 
 
 
