@@ -1,9 +1,3 @@
-// Contact Section
-let fullName = "";
-let emailAddress = "";
-let emailSubject = "";
-let emailMessage = "";
-
 document.addEventListener('DOMContentLoaded', function () {
   // Add an interactive feature
   const header = document.querySelector('header');
@@ -93,41 +87,49 @@ document.addEventListener('DOMContentLoaded', function () {
     link.addEventListener('click', scrollToSection);
   });
 
+
+
+
+
   // Contact Section
+  window.formData = {
+    fullName: "",
+    emailAddress: "",
+    emailSubject: "",
+    emailMessage: ""
+  };
+
   const submitBtn = document.getElementById('submitBtn');
   if (submitBtn) {
     submitBtn.addEventListener('click', function () {
       console.log('Button pressed');
 
-      fullName = document.getElementById('name').value;
-      console.log('Name:', fullName);
+      formData.fullName = document.getElementById('name').value;
+      formData.emailAddress = document.getElementById('email').value;
+      formData.emailSubject = document.getElementById('subject').value;
+      formData.emailMessage = document.getElementById('message').value;
 
-      emailAddress = document.getElementById('email').value;
-      console.log('Email:', emailAddress);
+      // Uncomment the following line if you want to prevent form submission
+      // event.preventDefault();
 
-      emailSubject = document.getElementById('subject').value;
-      console.log('Subject:', emailSubject);
+      console.log(formData);
 
-      emailMessage = document.getElementById('message').value;
-      console.log('Message:', emailMessage);
-
-      // Show the success message
       document.getElementById('form-message-success').style.display = 'block';
 
-      // Clear the input fields after submitting
       document.getElementById('name').value = "";
       document.getElementById('email').value = "";
       document.getElementById('subject').value = "";
       document.getElementById('message').value = "";
 
-      // Hide the success message after 5 seconds (5000 milliseconds)
       setTimeout(function () {
         document.getElementById('form-message-success').style.display = 'none';
       }, 5000);
     });
   }
 
-  // ... rest of your code ...
+
+
+
 
   window.addEventListener('beforeunload', function () {
     for (const form of document.getElementsByTagName('form')) {
